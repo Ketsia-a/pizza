@@ -1,0 +1,57 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .bgimg-1 {
+            background-image: url(http://ipicturee.com/wp-content/uploads/2013/12/delicious-pizza-photo-hd-widescreen-wallpaper.jpg);
+            min-height: 500px;
+        }
+        
+        .bgimg-2 {
+            background-image: url(https://www.fda.gov/files/family-eating-meal-1600x900-iStock61399078.png);
+            min-height: 500px;
+        }
+        
+        .bgimg-3 {
+            background-image: url(https://image.freepik.com/free-vector/pizza-menu-vector-set-collection-graphic-design_144089-95.jpg);
+            min-height: 800px;
+        }
+        
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: fixed;
+            position: relative;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        div {
+            display: block;
+        }
+        
+        .caption {
+            position: absolute;
+            text-align: center;
+            left: 0;
+            top: 50%;
+            width: 100%;
+        }
+        
+        .caption span.border {
+            background-color: #111;
+            color: #fff;
+            padding: 18px;
+            font-size: 25px;
+        }
+        
+        .description {
+            color: #777;
+            background-color: white;
+            text-align: center;
+            padding: 50px 80px;
+            text-align: justify;
+        }
