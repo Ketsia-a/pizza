@@ -1,3 +1,12 @@
 body {
     background-color: maroon;
 }
+
+.container {
+    background-image: url(https://d1s8393lsf2lpw.cloudfront.net/assets/menu/banner-cta-md-d932406182a6ae8c69e1127ee6d8fe36bd3884b39abadcf18afd5751cdc2c36a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    width: 50%;
+    padding: 20px;
+}
