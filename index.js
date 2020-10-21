@@ -6,8 +6,8 @@ function order(size, crust, topping = []) {
 
 function show() {
 
-    var sizePrice = parseInt(document.getSelection('this.size'), value)
-    var crustPrice = parseInt(document.getSelection('this.crust'), value)
+    var sizePrice = parseInt(document.getSelection('this.size').value)
+    var crustPrice = parseInt(document.getSelection('this.crust').value)
 
     var toppingPrice = []
     var onep = 1000;
