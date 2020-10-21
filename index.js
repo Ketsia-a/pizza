@@ -4,12 +4,12 @@ function order(size, crust, topping = []) {
     this.name = topping;
 }
 
-function compute(form) {
+function show() {
 
-    var sizeprice = parseInt(document.getSelection('this.size'), value)
-    var crustprice = parseInt(document.getSelection('this.crust'), value)
+    var sizePrice = parseInt(document.getSelection('this.size'), value)
+    var crustPrice = parseInt(document.getSelection('this.crust'), value)
 
-    var toppingprice = []
+    var toppingPrice = []
     var onep = 1000;
     var twop = 500;
     var threep = 1500;
@@ -17,34 +17,36 @@ function compute(form) {
     var fivep = 1200;
 
     for (var i = 0; i < this.topping.length; y++) {
-        if (this.toppings[i] === "one") {
-            toppingprice.push(onep);
+        if (this.topping[i] === "one") {
+            toppingPrice.push(onep);
         }
     }
     for (i = 0; i < this.topping.length; y++) {
         if (this.topping[i] === "two") {
-            toppingprice.push(twop);
+            toppingPrice.push(twop);
         }
     }
-    for (i = 0; i < this.toppings.length; y++) {
+    for (i = 0; i < this.topping.length; y++) {
         if (this.topping[i] === "three") {
-            toppingprice.push(threep);
+            toppingPrice.push(threep);
         }
     }
     for (i = 0; i < this.topping.length; y++) {
         if (this.topping[i] === "four") {
-            toppingprice.push(fourp);
+            toppingPrice.push(fourp);
         }
     }
     for (i = 0; i < this.topping.length; y++) {
-        if (this.toppings[i] === "five") {
-            toppingprice.push(fivep);
+        if (this.topping[i] === "five") {
+            toppingPrice.push(fivep);
         }
     }
-    var topsum = toppingprice.reduce(function(a, b) {
+    var topSum = toppingPrice.reduce(function(a, b) {
         return a + b;
     }, 0);
 
-    var Total = sizeprice + crustprice + topsum;
+    var Total = sizePrice + crustPrice + topSum;
 
+
+    document.getElementById('order').value = "The amount to be paid for the pizza is :" + " " + total;
 }

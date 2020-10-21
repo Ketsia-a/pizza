@@ -70,16 +70,21 @@
                     <label for="">Sausage 1200 </label>
                 </div>
             </div>
-            <input type="radio" name="location" value="">
+            <input type="radio" name="location" value="pickUp">
             <label for="">Pick up</label>
 
-            <input type="radio" name="location" value="">
+            <input type="radio" name="location" value="delivery">
             <label for="">delivery</label>
-            <div class="row ord">
-                <input TYPE="button" VALUE="place Order" ONCLICK="compute(form)">
-                <input TYPE="reset" VALUE="Another one">
+            <div class="row ">
+                <input TYPE="button" VALUE="place Order" ONCLICK="show()">
             </div>
+            <div>
+
+                <input TYPE="text" NAME="order" placeholder="Total order">
+            </div>
+
         </form>
+
     </div>
     <script src="index.js"></script>
 </body>
